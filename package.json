@@ -1,0 +1,37 @@
+{
+  "name": "hookrelay",
+  "version": "1.0.0",
+  "description": "Developer-first Local Webhook Interceptor, Cryptographic Verifier, Replay Engine & Live Visual Studio.",
+  "main": "dist/index.js",
+  "bin": {
+    "hookrelay": "./dist/bin.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w",
+    "start": "node dist/bin.js",
+    "test": "node --test dist/tests/**/*.test.js"
+  },
+  "keywords": [
+    "webhooks",
+    "stripe",
+    "github",
+    "supabase",
+    "hmac",
+    "testing",
+    "replay",
+    "interceptor",
+    "developer-tools",
+    "cli"
+  ],
+  "author": "Jatin Sharma <raghavjatin245@gmail.com> (https://jatinsh.netlify.app/)",
+  "homepage": "https://jatinsh.netlify.app/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raghav1924/hookrelay.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
