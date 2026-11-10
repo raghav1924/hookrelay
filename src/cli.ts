@@ -118,3 +118,4 @@ ${colors.bold}EXAMPLES:${colors.reset}
   $ hookrelay mock stripe --export ./tests/fixtures/stripe-checkout.json
 `);
 }
+

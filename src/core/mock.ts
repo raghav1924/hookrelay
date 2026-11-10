@@ -115,3 +115,4 @@ export class MockGenerator {
     return SignatureVerifier.verifyCustom(rawBody, sig, secret);
   }
 }
+

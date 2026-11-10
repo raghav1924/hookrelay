@@ -44,3 +44,4 @@ test('MockGenerator creates valid mock payloads for multiple providers', () => {
   assert.strictEqual(githubMock.signatureStatus.valid, true);
   assert.ok(githubMock.headers['x-github-event'] === 'push');
 });
+

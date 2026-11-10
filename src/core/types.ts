@@ -45,3 +45,4 @@ export interface ServerConfig {
   secret?: string;
   provider?: WebhookProvider;
 }
+
