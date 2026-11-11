@@ -45,3 +45,15 @@ test('MockGenerator creates valid mock payloads for multiple providers', () => {
   assert.ok(githubMock.headers['x-github-event'] === 'push');
 });
 
+test('SignatureVerifier rejects Stripe payload signed with wrong secret', () => {
+  const correctSecret = 'whsec_correct';
+  const wrongSecret = 'whsec_wrong';
+  const payload = JSON.stringify({ id: 'evt_999', type: 'charge.failed' });
+  const timestamp = Math.floor(Date.now() / 1000);
+
+  const signedHeaders = SignatureVerifier.sign('stripe', payload, correctSecret, timestamp);
+  const result = SignatureVerifier.verifyStripe(payload, signedHeaders['stripe-signature'], wrongSecret);
+  assert.strictEqual(result.valid, false, 'Should fail with wrong secret');
+});
+
+
