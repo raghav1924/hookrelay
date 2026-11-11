@@ -1,0 +1,21 @@
+name: Bug Report
+description: Create a report to help improve HookRelay
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for filing a bug report for HookRelay!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the bug encountered and expected behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: webhook-sample
+    attributes:
+      label: Webhook Headers & Payload
+      description: Sample headers and payload (redacting any private secrets).
+    validations:
+      required: false
