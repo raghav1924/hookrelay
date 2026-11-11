@@ -3,6 +3,7 @@
 <div align="center">
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![CI](https://github.com/raghav1924/hookrelay/actions/workflows/ci.yml/badge.svg)](https://github.com/raghav1924/hookrelay/actions)
 [![Node.js](https://img.shields.io/badge/Node.js-%3E%3D18.0.0-emerald.svg)](https://nodejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg)](https://www.typescriptlang.org/)
 [![Security](https://img.shields.io/badge/HMAC-SHA256-cyan.svg)](https://nodejs.org/api/crypto.html)
