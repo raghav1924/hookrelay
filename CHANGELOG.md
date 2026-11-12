@@ -15,3 +15,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Interactive dark-mode Web Studio on `http://localhost:3031` with event inspector, headers viewer, and instant replay button.
 - Mock webhook event synthesizer (`hookrelay mock stripe.payment_intent.succeeded`).
 - Zero external dependencies.
+
