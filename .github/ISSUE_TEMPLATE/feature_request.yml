@@ -1,0 +1,24 @@
+name: Feature Request
+description: Suggest an enhancement or new provider verifier for HookRelay
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve HookRelay!
+  - type: textarea
+    id: problem
+    attributes:
+      label: Is your request related to a webhook verification or replay problem?
+      description: Explain the provider or debugging friction.
+      placeholder: When debugging webhooks from Shopify / Clerk / LemonSqueezy...
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the proposed provider or feature
+      description: How should HookRelay handle signatures or event delivery?
+    validations:
+      required: true
