@@ -56,4 +56,17 @@ test('SignatureVerifier rejects Stripe payload signed with wrong secret', () => 
   assert.strictEqual(result.valid, false, 'Should fail with wrong secret');
 });
 
+test('SignatureVerifier handles malformed or missing Stripe signature components', () => {
+  const secret = 'whsec_format_test';
+  const payload = JSON.stringify({ id: 'evt_malformed' });
+
+  const missingV1Result = SignatureVerifier.verifyStripe(payload, 't=1731139200', secret);
+  assert.strictEqual(missingV1Result.valid, false, 'Missing v1 component rejected');
+  assert.strictEqual(missingV1Result.error, 'Malformed Stripe-Signature header format');
+
+  const missingHeaderResult = SignatureVerifier.verifyStripe(payload, undefined, secret);
+  assert.strictEqual(missingHeaderResult.valid, false, 'Missing header rejected');
+});
+
+
 
