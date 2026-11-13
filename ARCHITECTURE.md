@@ -48,3 +48,4 @@ To defend against timing side-channel attacks during webhook verification, HookR
 ## 2. In-Memory Ring Buffer Journal
 
 HookRelay buffers incoming events in a FIFO circular journal with zero disk I/O latency, making it ideal for high-throughput testing during batch webhook deliveries without database locks.
+
