@@ -16,3 +16,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Mock webhook event synthesizer (`hookrelay mock stripe.payment_intent.succeeded`).
 - Zero external dependencies.
 
+
+## [1.1.0] - 2026-11-15
+### Added
+- Cryptographic timing attack mitigation documentation.
+- Multi-provider signature specifications (Stripe, GitHub, Shopify).
+- Deterministic replay mechanics guide and tunneling integration examples.
