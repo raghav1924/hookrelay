@@ -22,3 +22,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Cryptographic timing attack mitigation documentation.
 - Multi-provider signature specifications (Stripe, GitHub, Shopify).
 - Deterministic replay mechanics guide and tunneling integration examples.
+
+## [1.2.0] - 2026-11-16
+### Added
+- Master design system documentation (Cybercore, Bento Grid).
+- Webhook replay idempotency testing guide.
+- Proprietary signature scheme guide and CLI cheatsheet.
