@@ -1,38 +1,31 @@
-# Contributing to HookRelay
+# Contributing to hookrelay
 
-Thank you for your interest in contributing to **HookRelay**! We welcome community contributions to help developers debug, verify, and replay webhooks locally with zero fuss.
+Thank you for your interest in contributing to **hookrelay**! We welcome bug fixes, documentation improvements, and feature proposals.
 
-## Development Setup
+## Development Workflow
 
-1. **Clone the repository:**
+1. Fork the repository and create your feature branch:
    ```bash
-   git clone https://github.com/raghav1924/hookrelay.git
-   cd hookrelay
+   git checkout -b feature/amazing-feature
    ```
-
-2. **Compile TypeScript:**
+2. Install dependencies and ensure strict type-checking passes:
    ```bash
    npm run build
-   # or watch mode
-   npm run dev
    ```
-
-3. **Run Unit Tests:**
+3. Run test suites:
    ```bash
    npm test
    ```
+4. Commit your changes using Conventional Commits:
+   - `feat:` for new capabilities
+   - `fix:` for bug fixes
+   - `docs:` for documentation updates
+   - `test:` for test additions
 
-## Pull Request Guidelines
-
-- Ensure all existing and new unit tests pass (`npm test`).
-- Keep changes zero-dependency: utilize Node.js standard libraries (`node:crypto`, `node:http`, `node:fs`).
-- Write meaningful, conventional commit messages (`feat:`, `fix:`, `docs:`, `test:`).
-- Document new provider HMAC signatures or replay options.
-
-## Code of Conduct
-
-We are committed to providing a welcoming, inclusive, and harassment-free environment for everyone. Please be respectful and constructive in all discussions and reviews.
+## Code Quality Standards
+- Pure TypeScript with strict mode enabled.
+- Zero external runtime npm dependencies whenever feasible.
+- Comprehensive test coverage for all parsing, calculations, and execution paths.
 
 ---
-Maintained by **[Jatin Sharma](https://jatinsh.netlify.app/)** • GitHub: **[@raghav1924](https://github.com/raghav1924)**
-
+*Maintained by [Jatin Sharma](https://jatinsh.netlify.app/)*
