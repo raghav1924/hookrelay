@@ -1,17 +1,14 @@
 ## Description
-
-Brief summary of the webhook replay or signature verification feature introduced in this PR.
+Brief summary of changes proposed in this Pull Request for **hookrelay**.
 
 ## Type of Change
-
-- [ ] New provider HMAC verification support
-- [ ] Bug fix
+- [ ] Bug fix (non-breaking change which fixes an issue)
+- [ ] New feature (non-breaking change which adds functionality)
 - [ ] Documentation update
-- [ ] Refactor
+- [ ] Performance improvement
 
 ## Checklist
-
-- [ ] My code adheres to TypeScript strict mode
-- [ ] Unit tests pass cleanly (`npm test`)
-- [ ] Zero external runtime dependencies maintained
-
+- [ ] My code follows the project's code style and conventions.
+- [ ] I have executed `npm run build` and verified zero compiler errors.
+- [ ] I have executed `npm test` and verified 100% test pass rate.
+- [ ] I have updated documentation where appropriate.
