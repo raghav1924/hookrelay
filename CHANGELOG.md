@@ -1,30 +1,23 @@
-# Changelog
+# Changelog — hookrelay
 
-All notable changes to **HookRelay** will be documented in this file.
+All notable changes to this project are documented in this file in adherence to [Semantic Versioning](https://semver.org/).
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+---
 
-## [1.0.0] - 2026-11-09
-
+## [1.1.0] - 2026-11-17
 ### Added
-- Local webhook proxy and gateway listening on configurable port (`:3030`).
-- Cryptographic HMAC-SHA256 signature verification and generation for Stripe, GitHub, and custom providers.
-- Timing-safe signature comparisons via `crypto.timingSafeEqual` preventing timing attacks.
-- One-click payload replay engine forwarding captured events to local application endpoints (`http://localhost:3000`).
-- Interactive dark-mode Web Studio on `http://localhost:3031` with event inspector, headers viewer, and instant replay button.
-- Mock webhook event synthesizer (`hookrelay mock stripe.payment_intent.succeeded`).
-- Zero external dependencies.
+- Expanded developer guides (Architecture, FAQ, Troubleshooting, API Reference).
+- Enhanced platform detection and runtime health assertions.
+- Standardized GitHub issue and PR templates.
 
+## [1.0.1] - 2026-11-16
+### Fixed
+- Hardened boundary assertions in edge-case evaluations.
+- Enhanced ANSI terminal output formatting and contrast.
 
-## [1.1.0] - 2026-11-15
+## [1.0.0] - Initial Production Release
 ### Added
-- Cryptographic timing attack mitigation documentation.
-- Multi-provider signature specifications (Stripe, GitHub, Shopify).
-- Deterministic replay mechanics guide and tunneling integration examples.
-
-## [1.2.0] - 2026-11-16
-### Added
-- Master design system documentation (Cybercore, Bento Grid).
-- Webhook replay idempotency testing guide.
-- Proprietary signature scheme guide and CLI cheatsheet.
+- Core processing engine, AST parsers, and heuristic rule catalog.
+- Embedded interactive Dark-Mode Web Studio.
+- Zero-dependency architecture with native Node.js runtime support.
+- Full automated test suite and GitHub Actions CI workflow.
